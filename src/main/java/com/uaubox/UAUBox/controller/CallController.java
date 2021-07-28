@@ -2,15 +2,16 @@ package com.uaubox.UAUBox.controller;
 
 import com.uaubox.UAUBox.dto.RequestDTO;
 import com.uaubox.UAUBox.dto.ResponseDTO;
-import com.uaubox.UAUBox.entity.FaleMaisPlan;
 import com.uaubox.UAUBox.service.FaleMaisPlanService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collections;
-import java.util.List;
 
 @RestController
 @RequestMapping("/call")
