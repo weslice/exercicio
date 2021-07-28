@@ -26,7 +26,7 @@ public class CallController {
             return new ResponseEntity<>(faleMaisPlanService.calculateCallPrice(requestData), HttpStatus.OK);
         } catch (RuntimeException ex) {
             var errorResponse = new ResponseDTO(null, Collections.singletonList(ex.getMessage()), ex.getMessage());
-            return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
         }
     }
 

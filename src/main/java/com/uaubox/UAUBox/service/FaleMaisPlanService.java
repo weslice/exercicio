@@ -27,16 +27,16 @@ public class FaleMaisPlanService {
             return new ResponseDTO(Collections.EMPTY_LIST, null, "Não foi encontrado dados");
 
         float callPrice;
-        var discontTime = param.getTime() - param.getPlan().getTariffDiscountTime();
-        if (discontTime < 0)
+        var discountTime = param.getTime() - param.getPlan().getTariffDiscountTime();
+        if (discountTime < 0)
             callPrice = 0;
         else
-            callPrice = (talkMore.getCallPriceByMinute().floatValue() * discontTime);
+            callPrice = (talkMore.getCallPriceByMinute().floatValue() * discountTime);
 
         NumberFormat nf = new DecimalFormat(",##0,00");
-        var formatedCurrency = nf.getCurrencyInstance().format(param.getPlan().getExtra() * callPrice);
+        var formattedCurrency = nf.getCurrencyInstance().format(param.getPlan().getExtra() * callPrice);
         return new ResponseDTO(Collections.singletonMap("Call Price",
-                formatedCurrency),
+                formattedCurrency),
                 null, "Registros Encontrados");
     }
 
