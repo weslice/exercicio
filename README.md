@@ -24,8 +24,12 @@ time é o tempo desejado em minutos da ligação
 plan é o nome do plano e tem que ser passado no seguinte padrão:
 
 Tarifa Fixa = TARIFA_FIXA
+
 Plano Fale Mais 30 = FALE_MAIS_30
+
 Plano Fale Mais 60 = FALE_MAIS_60
+
 Plano Fale Mais 120 =  FALE_MAIS_120
+
 
 Você vai receber o retorno. 
