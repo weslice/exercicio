@@ -1,6 +1,3 @@
-# uau_box_test
-
-
 A aplicação foi criada com o spring-boot, com algumas dependências necessárias para rodar a aplicação.
 Utilizei o banco de dados embutido H2 para ser mais fácil e pratico de desenvolver uma aplicação de teste ou estudos. 
 Para inicilizar a aplicação é só abrir como Projeto, baixar as dependências pelo Gradle e dar Iniciar no Spring Boot (RUN), mais nenhuma configuração é necessária.
